@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="musica_estilo.css">
+    <script src="all.min.js"></script>
+    <link rel="shortcut icon" href="assets/icons/music.svg" type="image/x-icon">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <img src="assets/images/extreme.jfif">
+    <div class="descricao">
+        <h2>Nome da música</h2>
+        <i>Nome do artista</i>
+    </div>
+
+    <div class="duracao">
+        <div class="barra">
+            <progress value="0" max="1"></progress>
+
+            <div class="ponto">
+
+            </div>
+        </div>
+        <div class="tempo">
+            <p class="inicio">
+                0:00
+            </p>
+            <p class="fim">
+                3:40
+            </p>
+        </div>
+    </div>
+
+    <div class="player">
+
+        <button type="button" id="anterior">
+            <i class="fa-solid fa-backward-step setas anterior"></i>
+        </button>
+
+        <button type="button" id="botao-play">
+            <i class="fas fa-play-circle botao-play"></i>
+        </button>
+
+        <button type="button" id="botao-pause">
+            <i class="fa-solid fa-circle-pause botao-pause"></i>
+        </button>
+        
+        <button type="button" id="proxima">
+            <i class="fa-solid fa-forward-step setas proxima"></i>
+        </button>
+    </div>
+
+    <audio src=""></audio>
+    <script src="musica_script.js"></script>
+</body>
+
+</html>
